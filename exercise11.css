@@ -1,0 +1,156 @@
+
+* {
+    box-sizing:border-box;
+  }
+
+/*1st*/
+
+.row1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.top1, .top2 {
+    width: 100%;
+ 
+    margin: 5px;
+    height: 200px;
+    border: 1px solid black;
+}
+.top1 {
+    background-image: url("a1.jpg");
+    background-size: cover;
+}
+.top2 {
+    background-image: url("a2.jpg");
+    background-size: cover;
+}
+
+/*2nd*/
+
+.row2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.mid {
+    width: 98%;
+    height: 200px;
+    margin: 5px;
+    border: 1px solid black;
+    background-image: url("a3.jpg");
+    background-size: cover;
+}
+
+/*3rd*/
+
+.row3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.low1, .low2, .low3 {
+    width: 100%;
+    height: 200px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.low1 {
+    background-image: url("a4.jpg");
+    background-size: cover;
+}
+.low2 {
+    background-image: url("a5.jpg");
+    background-size: cover;
+}
+.low3 {
+    background-image: url("a6.jpg");
+    background-size: cover;
+}
+
+/*4th*/
+
+.row4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.bot1, .bot2, .bot3, .bot4 {
+    width: 100%;
+    height: 200px;
+    margin:5px;
+    border: 1px solid black;
+}
+.bot1 {
+    background-image: url("a7.jpg");
+    background-size: cover;
+}
+.bot2 {
+    background-image: url("a8.jpg");
+    background-size: cover;
+}
+.bot3 {
+    background-image: url("a9.jpg");
+    background-size: cover;
+}
+.bot4 {
+    background-image: url("a10.jpg");
+    background-size: cover;
+}
+/*media queries*/
+
+/*for phones*/
+@media screen and (min-width:768px){
+    .top1, .top2 {
+        width: 100%;
+
+        height: 150px;
+        margin: 5px;
+    }
+    
+    .mid{
+        width: 100%;
+        height: 280px;
+        margin: 5px;
+    }
+    .low1, .low2, .low3 {
+        width: 100%;
+        height: 200px;
+        margin: 5px;
+    }
+    .bot1, .bot2, .bot3, .bot4 {
+        width: 48.5%;
+        float: left;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .top1, .top2{
+        width: 49%;
+        margin: 5px;
+        float: left;
+    }
+    .mid{
+        width: 100%;
+        margin: 5px;
+    }
+    .low1, .low2, .low3 {
+        width: 32.4%;
+        margin: 5px;
+        float: left;
+    }
+    .bot1, .bot2, .bot3, .bot4 {
+        width: 24%;
+        margin: 5px;
+        float: left;
+    }
+}
